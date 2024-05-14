@@ -11,3 +11,4 @@ else:
   st.write('Goodbye')
 
 st.file_uploader("Upload a CSV")
+st.multiselect("não", ["sei", "como", "isso","funciona"])
