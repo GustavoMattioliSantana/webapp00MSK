@@ -3,7 +3,7 @@ import streamlit as st
 page_bg_img = '''
 <style>
 body {
-background-image: src("mont.png");
+background-image: url("mont.png");
 background-size: cover;
 }
 </style>
