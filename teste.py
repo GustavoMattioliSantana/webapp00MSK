@@ -6,6 +6,6 @@ st.image('dog.jpg', caption='dog fofo')
 
 st.header('st.button')
 if st.button('Say hello'):
-st.write('Why hello there')
+  st.write('Why hello there')
 else:
-st.write('Goodbye')
+  st.write('Goodbye')
