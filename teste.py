@@ -15,7 +15,6 @@ else:
 st.file_uploader("Upload a CSV")
 st.multiselect("não", ["sei", "como", "isso","funciona"])
 
-
 class VirtualPet:
     def __init__(self):
         self.root = tk.Tk()
@@ -65,16 +64,19 @@ class VirtualPet:
         self.hunger += 20
         if self.hunger > 100:
             self.hunger = 100
+        self.hunger_label['text'] = f"Fome: {self.hunger}"
 
     def sleep(self):
         self.sleepiness += 20
         if self.sleepiness > 100:
             self.sleepiness = 100
+        self.sleepiness_label['text'] = f"Sono: {self.sleepiness}"
 
     def play(self):
         self.fun += 20
         if self.fun > 100:
             self.fun = 100
+        self.fun_label['text'] = f"Diversão: {self.fun}"
 
     def game_over(self):
         self.root.title("Game Over!")
