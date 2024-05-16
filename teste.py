@@ -1,3 +1,5 @@
+import tkinter as tk
+import time
 import streamlit as st
 
 st.title("Site top!")
@@ -13,8 +15,6 @@ else:
 st.file_uploader("Upload a CSV")
 st.multiselect("não", ["sei", "como", "isso","funciona"])
 
-import tkinter as tk
-import time
 
 class VirtualPet:
     def __init__(self):
